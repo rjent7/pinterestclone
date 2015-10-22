@@ -1,3 +1,4 @@
+= image_tag @pin.image.url(:medium)
 %h1= @pin.title
 %p= @pin.description
 %p
@@ -5,6 +6,6 @@ Submitted by
 =  @pin.user.email
 
 %br
-= link_to "Back'th" , root_path
+= link_to "Back" , root_path
 = link_to "Edit" , edit_pin_path
-= link_to "Delete'th" , pin_path , method: :delete , data: {confirm: "Sure bud?"}
+= link_to "Delete" , pin_path , method: :delete , data: {confirm: "Sure bud?"}
