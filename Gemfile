@@ -24,6 +24,8 @@ gem 'devise'
 
 gem 'paperclip' , github: 'thoughtbot/paperclip'
 
+gem 'masonry-rails' , '~> 0.2.4'
+
 gem 'jquery-rails'
 
 gem 'turbolinks'

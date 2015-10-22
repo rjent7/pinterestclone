@@ -9,8 +9,8 @@
 	= csrf_meta_tag
 %body
 	%nav.navbar.navbar-default
-		.navbar-brand= link_to "Feedgia2" , root_path
 		.container
+			.navbar-brand= link_to "Feedgia2" , root_path
 			- if user_signed_in?
 				%ul.nav.navbar-nav.navbar-right
 					%li= link_to "New Post" , new_pin_path
