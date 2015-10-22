@@ -22,6 +22,8 @@ gem 'simple_form' , '~> 3.0.2'
 
 gem 'devise'
 
+gem 'paperclip' , github: 'thoughtbot/paperclip'
+
 gem 'jquery-rails'
 
 gem 'turbolinks'
