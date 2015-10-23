@@ -19,8 +19,16 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
  body {
 	background: #E9E9E9;
+}
+
+#brandnav {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 1.3em;
+	color: #2ecc71;
 }
 
 h1, h2, h3, h4, h5, h6 {
