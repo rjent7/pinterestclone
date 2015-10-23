@@ -14,8 +14,8 @@
 							= @pin.user.profile_name
 					.col-md-6
 						.btn-group.pull-right
-							= link_to 'Back' , root_path , class: "btn btn-default"
-							- if user_signed_in?
+							= link_to 'Back' , root_path , class: "btn btn-default" , data: {disable_with: "<i class='fa fa-spinner fa-spin'></i>  going back.."}
+							- if @pin.user == current_user 
 								= link_to "Edit", edit_pin_path, class: "btn btn-default"
 								= link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
 .container#likeem
