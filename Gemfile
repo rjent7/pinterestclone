@@ -26,6 +26,8 @@ gem 'paperclip' , github: 'thoughtbot/paperclip'
 
 gem 'masonry-rails' , '~> 0.2.4'
 
+gem 'font-awesome-sass', '4.2.0'
+
 gem 'jquery-rails'
 
 gem 'turbolinks'

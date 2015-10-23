@@ -5,7 +5,7 @@
 			%h2= link_to pin.title, pin
 			%p.user
 				Submitted by
-				= pin.user.email
+				= pin.user.profile_name
 			%p{:id => "pin_#{pin.id}_likes"}= render partial: "likes", locals: {pin: pin}
 
 	

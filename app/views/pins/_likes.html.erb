@@ -1,7 +1,7 @@
 <% if user_signed_in? && current_user.likes?(pin) %>
 
 	<%= link_to pin_like_path(pin), method: :delete, remote: true do%>
-	<button type="button" class="btn btn-warning btn-md" >
+	<button type="button" class="btn btn-success btn-md" >
 		<i class="fa fa-thumbs-up" style="font-size:1.2em"></i>
 		<span class="badge"><%= pin.likes.count %></span>
 	</button>

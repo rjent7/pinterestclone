@@ -10,11 +10,16 @@
 				.row
 					.col-md-6
 						%p.user
-							Submitted by
-							= @pin.user.email
+							Posted by
+							= @pin.user.profile_name
 					.col-md-6
 						.btn-group.pull-right
 							= link_to 'Back' , root_path , class: "btn btn-default"
 							- if user_signed_in?
 								= link_to "Edit", edit_pin_path, class: "btn btn-default"
 								= link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
+.container#likeem
+	.row
+		.col-md-6
+			%p= "Likes this post:"
+			= render 'likers'

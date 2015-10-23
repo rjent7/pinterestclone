@@ -14,7 +14,8 @@
  *= require_tree .
  *= require_self
  */
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
@@ -115,4 +116,12 @@ nav {
 
 textarea {
 	min-height: 250px;
+}
+
+#likeem {
+	width: 100%;
+	margin: 50px;
+	height: 100%;
+	background: #fff;
+	text-align: center;
 }
