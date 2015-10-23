@@ -6,3 +6,6 @@
 			%p.user
 				Submitted by
 				= pin.user.email
+			%p{:id => "pin_#{pin.id}_likes"}= render partial: "likes", locals: {pin: pin}
+
+	

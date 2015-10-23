@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :pins
+  
+  resources :pins do
+    resource :like , module: :pins
+  end
 
+  devise_for :users
+  
   root "pins#index"
 end
